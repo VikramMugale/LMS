@@ -1,0 +1,50 @@
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.auth-nav-link.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .auth-nav {
+    gap: 1rem;
+  }
+}
+
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+/* iPhone mini specific styles */
+@media screen and (device-width: 375px) and (device-height: 812px) {
+  .auth-page {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+} 

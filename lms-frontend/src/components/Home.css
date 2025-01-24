@@ -1,0 +1,108 @@
+.home {
+  min-height: 100vh;
+}
+
+.home-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1501504905252-473c47e087f8') center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.featured-courses {
+  padding: 2rem 0;
+}
+
+.featured-courses h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.course-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 1.5rem;
+}
+
+.details h3 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.details p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .home-banner {
+    padding: 3rem 1rem;
+  }
+
+  .home-banner h1 {
+    font-size: 2rem;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
+  
+  
